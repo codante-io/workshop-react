@@ -76,13 +76,11 @@ export default function WorkshopImobiliaria() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       <Header />
-      <main className="flex-grow">
-        <HeroSection />
-        <FeaturedProperties properties={searchResults} />
-        <ContactForm />
-      </main>
+      <HeroSection />
+      <FeaturedProperties properties={searchResults} />
+      <ContactForm />
       <Footer />
     </div>
   );
