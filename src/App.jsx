@@ -3,16 +3,19 @@ import FeaturedProperties from "./components/featured-properties";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
+import { PropertiesProvider } from "./providers/property-provider";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <FeaturedProperties />
-      <ContactForm />
-      <Footer />
-    </div>
+    <PropertiesProvider>
+      <div>
+        <Navbar />
+        <Hero />
+        <FeaturedProperties />
+        <ContactForm />
+        <Footer />
+      </div>
+    </PropertiesProvider>
   );
 }
 
